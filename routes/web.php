@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/hellow', function () {
+    return "This is Shuvo";
+});
+
+
+Route::get('/pdf','pdfController@index')->name('pdf');
